@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-red-700 flex justify-center items-center min-h-screen">
+    <div class="bg-black flex flex-col justify-center items-center h-96 w-1/3 gap-4 rounded-xl shadow-lg">
+        <h1 class="text-white mb-6 font-sans font-bold text-2xl">Log In</h1>
+        <form id="login-form" class="flex flex-col gap-4">
+            <input class="px-4 py-2 rounded-lg text-center" type="email" id="email" placeholder="Email" aria-label="Email">
+            <input id="psw" class="px-4 py-2 rounded-lg text-center" type="password" placeholder="Password" aria-label="Password">
+            <button id="login-button" type="button" onclick="handleLogin()" class="bg-red-700 text-white px-4 py-2 rounded-md">Log In</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+    <script src="./firebase.config.js"></script>
+</body>
+</html>
+
